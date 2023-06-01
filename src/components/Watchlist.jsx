@@ -1,6 +1,11 @@
+import MovieCard from "./MovieCard";
 export default function WatchList(props){
+    const { } = props
+
     let movieDisplay = props.list.map(() =>{
-        
+        return (
+            <MovieCard></MovieCard>
+        );
     })
 
     return (

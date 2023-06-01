@@ -8,9 +8,12 @@ import WatchList from './components/Watchlist';
 
 function App() {
   const [movieList, setMovielist] = useState([])
-  const [watchMovie, setWatchMovie] = useState([])
+  const [watchList, setWatchList] = useState([])
   const [page, setPage] = useState(1)
 
+  const addMovie = (movie) => {
+
+  }
 
   const getData = () => {
     axios
