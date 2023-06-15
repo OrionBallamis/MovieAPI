@@ -1,10 +1,9 @@
 import MovieCard from "./MovieCard";
-export default function WatchList(props){
-    const { } = props
+export default function WatchList({ list, removeMovie}){
 
-    let movieDisplay = props.list.map(() =>{
+    let movieDisplay =list.map((movie, list) =>{
         return (
-            <MovieCard></MovieCard>
+            <MovieCard movie={movie} removeMovie={removeMovie} list={list}></MovieCard>
         );
     })
 

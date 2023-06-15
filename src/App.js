@@ -7,12 +7,21 @@ import axios from 'axios';
 import WatchList from './components/Watchlist';
 
 function App() {
+  const [list, setList] = useState([])
   const [movieList, setMovielist] = useState([])
   const [watchList, setWatchList] = useState([])
   const [page, setPage] = useState(1)
 
+  
   const addMovie = (movie) => {
+      setList([...list, movie])
+  }
 
+  const removeMovie = () => {
+    const newState = list.filter((mov) => {
+
+    })
+    setList(newState);
   }
 
   const getData = () => {
